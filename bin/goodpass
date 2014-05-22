@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var goodpass = require("../goodpass.js");
+
+if (process.argv.length < 3) {
+  console.error("Usage: goodpass <password>")
+  process.exit(1)
+}
+
+console.log(goodpass(process.argv[2]));
