@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/bin/node',
+1 verbose cli   '/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/harrisbernstein/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+12 verbose folder .
+13 info prepublish goodpass@0.0.3
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/harrisbernstein/.npm/1f1177db-tar.lock
+16 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+17 verbose lock tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz /Users/harrisbernstein/.npm/c5ed2838-8125-0-06958888145163655-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+21 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+22 verbose tar unpack /var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+23 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+24 verbose lock tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package /Users/harrisbernstein/.npm/de5cd107-8125-0-06958888145163655-package.lock
+25 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+26 verbose lock tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz /Users/harrisbernstein/.npm/c5ed2838-8125-0-06958888145163655-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry goodpass.js
+33 silly gunzTarPerm extractEntry bin/goodpass
+34 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+35 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+36 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+37 silly lockFile c5ed2838-8125-0-06958888145163655-tmp-tgz tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/tmp.tgz
+38 verbose tar pack [ '/Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz',
+38 verbose tar pack   '/var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package' ]
+39 verbose tarball /Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+40 verbose folder /var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+41 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+42 verbose lock tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package /Users/harrisbernstein/.npm/de5cd107-8125-0-06958888145163655-package.lock
+43 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+44 verbose lock tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz /Users/harrisbernstein/.npm/50e228ca-n-npm-goodpass-0-0-3-package-tgz.lock
+45 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+46 silly lockFile de5cd107-8125-0-06958888145163655-package tar:///var/folders/y_/pv072zjd1rs5j3w5d95lmx_w0000gn/T/npm-23289-UcHIAbm-/1400794278125-0.06958888145163655/package
+47 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+48 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+49 silly lockFile adf84d16-stein-npm-goodpass-0-0-3-package /Users/harrisbernstein/.npm/goodpass/0.0.3/package
+50 verbose lock /Users/harrisbernstein/.npm/goodpass/0.0.3/package /Users/harrisbernstein/.npm/adf84d16-stein-npm-goodpass-0-0-3-package.lock
+51 silly lockFile adf84d16-stein-npm-goodpass-0-0-3-package /Users/harrisbernstein/.npm/goodpass/0.0.3/package
+52 silly lockFile adf84d16-stein-npm-goodpass-0-0-3-package /Users/harrisbernstein/.npm/goodpass/0.0.3/package
+53 verbose tar unpack /Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+54 silly lockFile cdb7afb1-stein-npm-goodpass-0-0-3-package tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package
+55 verbose lock tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package /Users/harrisbernstein/.npm/cdb7afb1-stein-npm-goodpass-0-0-3-package.lock
+56 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+57 verbose lock tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz /Users/harrisbernstein/.npm/50e228ca-n-npm-goodpass-0-0-3-package-tgz.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry LICENSE
+63 silly gunzTarPerm extractEntry goodpass.js
+64 silly gunzTarPerm extractEntry bin/goodpass
+65 silly lockFile cdb7afb1-stein-npm-goodpass-0-0-3-package tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package
+66 silly lockFile cdb7afb1-stein-npm-goodpass-0-0-3-package tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package
+67 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+68 silly lockFile 50e228ca-n-npm-goodpass-0-0-3-package-tgz tar:///Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz
+69 verbose chmod /Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz 644
+70 verbose chown /Users/harrisbernstein/.npm/goodpass/0.0.3/package.tgz [ 501, 20 ]
+71 silly lockFile 3a52ce78- .
+72 silly lockFile 3a52ce78- .
+73 silly publish { author:
+73 silly publish    { name: 'Jason McGhee',
+73 silly publish      email: 'jason.mcghee@metamarkets.com',
+73 silly publish      url: 'http://www.metamarkets.com' },
+73 silly publish   name: 'goodpass',
+73 silly publish   description: 'Make sure your password is good!',
+73 silly publish   version: '0.0.3',
+73 silly publish   repository:
+73 silly publish    { type: 'git',
+73 silly publish      url: 'git://github.com/jasonjmcghee/node-goodpass.git' },
+73 silly publish   main: 'goodpass.js',
+73 silly publish   bin: { goodpass: './bin/goodpass' },
+73 silly publish   scripts: { test: 'mocha --compilers coffee:coffee-script/register tests/goodpass.mocha.coffee' },
+73 silly publish   engines: { node: '*' },
+73 silly publish   dependencies: {},
+73 silly publish   devDependencies: {},
+73 silly publish   _npmUser: { name: 'jasonjmcghee', email: 'jason.mcghee@metamarkets.com' },
+73 silly publish   _id: 'goodpass@0.0.3',
+73 silly publish   optionalDependencies: {},
+73 silly publish   _engineSupported: true,
+73 silly publish   _npmVersion: '1.1.2',
+73 silly publish   _nodeVersion: 'v0.7.6-pre',
+73 silly publish   _defaultsLoaded: true,
+73 silly publish   _from: '.',
+73 silly publish   readme: 'The "goodpass" utility enforces Stanford\'s password validation policy.\n\nReturns an array of all errors yielded while validating the password (or empty array if valid password).\n',
+73 silly publish   readmeFilename: 'README.md',
+73 silly publish   bugs: { url: 'https://github.com/jasonjmcghee/node-goodpass/issues' },
+73 silly publish   homepage: 'https://github.com/jasonjmcghee/node-goodpass',
+73 silly publish   dist: { shasum: '952e9e9b9fd4d8c5b0ddf8038e1c7dcd57832f4f' } }
+74 verbose url raw goodpass
+75 verbose url resolving [ 'https://registry.npmjs.org/', './goodpass' ]
+76 verbose url resolved https://registry.npmjs.org/goodpass
+77 info trying registry request attempt 1 at 14:31:18
+78 http PUT https://registry.npmjs.org/goodpass
+79 http 403 https://registry.npmjs.org/goodpass
+80 error publish Failed PUT 403
+81 error Error: forbidden cannot modify pre-existing version: 0.0.3
+81 error old={"author":{"name":"Jason McGhee","email":"jason.mcghee@metamarkets.com","url":"http://www.metamarkets.com"},"name":"goodpass","description":"Make sure your password is good!","version":"0.0.3","repository":{"type":"git","url":"git://github.com/jasonjmcghee/node-goodpass.git"},"main":"goodpass.js","bin":{"goodpass":"./bin/goodpass"},"scripts":{"test":"mocha --compilers coffee:coffee-script/register tests/goodpass.mocha.coffee"},"engines":{"node":"*"},"dependencies":{},"devDependencies":{},"_npmUser":{"name":"jasonjmcghee","email":"jason.mcghee@metamarkets.com"},"_id":"goodpass@0.0.3","optionalDependencies":{},"_engineSupported":true,"_npmVersion":"1.4.3","_nodeVersion":"v0.7.6-pre","_defaultsLoaded":true,"_from":".","bugs":{"url":"https://github.com/jasonjmcghee/node-goodpass/issues"},"homepage":"https://github.com/jasonjmcghee/node-goodpass","dist":{"shasum":"d19ba3cf6f1318dff5e41a84fca407473a6c8984","tarball":"http://registry.npmjs.org/goodpass/-/goodpass-0.0.3.tgz"},"maintainers":[{"name":"jasonjmcghee","email":"jason.mcghee@metamarkets.com"}]}
+81 error new={"author":{"name":"Jason McGhee","email":"jason.mcghee@metamarkets.com","url":"http://www.metamarkets.com"},"name":"goodpass","description":"Make sure your password is good!","version":"0.0.3","repository":{"type":"git","url":"git://github.com/jasonjmcghee/node-goodpass.git"},"main":"goodpass.js","bin":{"goodpass":"./bin/goodpass"},"scripts":{"test":"mocha --compilers coffee:coffee-script/register tests/goodpass.mocha.coffee"},"engines":{"node":"*"},"dependencies":{},"devDependencies":{},"_npmUser":{"name":"jasonjmcghee","email":"jason.mcghee@metamarkets.com"},"_id":"goodpass@0.0.3","optionalDependencies":{},"_engineSupported":true,"_npmVersion":"1.4.3","_nodeVersion":"v0.7.6-pre","_defaultsLoaded":true,"_from":".","readme":"The \"goodpass\" utility enforces Stanford's password validation policy.\u000a\u000aReturns an array of all errors yielded while validating the password (or empty array if valid password).\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/jasonjmcghee/node-goodpass/issues"},"homepage":"https://github.com/jasonjmcghee/node-goodpass","dist":{"shasum":"952e9e9b9fd4d8c5b0ddf8038e1c7dcd57832f4f","tarball":"http://registry.npmjs.org/goodpass/-/goodpass-0.0.3.tgz"},"maintainers":[{"name":"jasonjmcghee","email":"jason.mcghee@metamarkets.com"}]}: goodpass
+81 error     at RegClient.<anonymous> (/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+81 error     at Request.self.callback (/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/lib/node_modules/npm/node_modules/request/request.js:123:22)
+81 error     at Request.EventEmitter.emit (events.js:98:17)
+81 error     at Request.<anonymous> (/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/lib/node_modules/npm/node_modules/request/request.js:893:14)
+81 error     at Request.EventEmitter.emit (events.js:117:20)
+81 error     at IncomingMessage.<anonymous> (/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/lib/node_modules/npm/node_modules/request/request.js:844:12)
+81 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+81 error     at _stream_readable.js:920:16
+81 error     at process._tickCallback (node.js:415:13)
+82 error If you need help, you may report this *entire* log,
+82 error including the npm and node versions, at:
+82 error     <http://github.com/npm/npm/issues>
+83 error System Darwin 13.2.0
+84 error command "/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/bin/node" "/Users/harrisbernstein/workspace/dash/node/node-v0.10.26-Darwin-x64/bin/npm" "publish"
+85 error cwd /Users/harrisbernstein/workspace/goodpass
+86 error node -v v0.10.26
+87 error npm -v 1.4.3
+88 verbose exit [ 1, true ]
