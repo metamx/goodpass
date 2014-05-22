@@ -1,4 +1,4 @@
 .git
-tests/
+tests
 *.coffee
 npm-debug.log
