@@ -7,7 +7,6 @@ errorUpper  = (n) -> "#{prefix} uppercase letter (must be #{n} characters or mor
 errorLower  = (n) -> "#{prefix} lowercase letter (must be #{n} characters or more)"
 errorNumber = (n) -> "#{prefix} number (must be #{n} characters or more)"
 errorSymbol = (n) -> "#{prefix} symbol (must be #{n} characters or more)"
-valid       = 'Valid password'
 blank       = 'Empty password'
 
 describe 'goodpass', ->
@@ -40,10 +39,10 @@ describe 'goodpass', ->
       expect(goodpass('abcdefghijkl12345')).to.eql([errorUpper(20)])
 
     it 'should be valid if 8+ chars with symbols, mixed case letters, and numbers', ->
-      expect(goodpass('abcdefgH1*')).to.eql([valid])
+      expect(goodpass('abcdefgH1*')).to.eql([])
     it 'should be valid if 12+ chars with mixed case letters, and numbers', ->
-      expect(goodpass('abcdefghijK1')).to.eql([valid])
+      expect(goodpass('abcdefghijK1')).to.eql([])
     it 'should be valid if 16+ chars with mixed case letters', ->
-      expect(goodpass('abcdefghijklmnoP')).to.eql([valid])
+      expect(goodpass('abcdefghijklmnoP')).to.eql([])
     it 'should be valid if 20+ chars', ->
-      expect(goodpass('abcdefghijklmnopqrst')).to.eql([valid])
+      expect(goodpass('abcdefghijklmnopqrst')).to.eql([])

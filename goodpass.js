@@ -69,9 +69,6 @@
     } else {
       msgs.push('Empty password');
     }
-    if (msgs.length < 1) {
-      msgs.push('Valid password');
-    }
     return msgs;
   };
 

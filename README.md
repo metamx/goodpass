@@ -1,3 +1,3 @@
-The "goodpass" util which enforces Stanford's password validation.
+The "goodpass" utility enforces Stanford's password validation policy.
 
-Returns 'Valid password' if password passes validation, otherwise, the error message.
+Returns an array of all errors yielded while validating the password (or empty array if valid password).
