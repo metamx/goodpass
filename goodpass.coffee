@@ -10,10 +10,10 @@ goodpass = (password) ->
 
   msgs = []
   symbolRegex = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g
-  hasSymbol = password.match(symbolRegex) is null
-  hasNumber = password.match(/[0-9]/g) is null
-  hasUpper = password.match(/[A-Z]/g) is null
-  hasLower = password.match(/[a-z]/g) is null
+  hasSymbol = symbolRegex.test(password)
+  hasNumber = /[0-9]/g.test(password)
+  hasUpper = /[A-Z]/g.test(password)
+  hasLower = /[a-z]/g.test(password)
 
   if password.length < 8
     msgs.push(errorLength(8))
