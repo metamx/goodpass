@@ -25,49 +25,48 @@
   };
 
   goodpass = function(password) {
-    var hasLower, hasNumber, hasSymbol, hasUpper, msgs, symbolRegex;
+    var hasNoLower, hasNoNumber, hasNoSymbol, hasNoUpper, msgs, symbolRegex;
+    if (!password) {
+      return ['Empty password'];
+    }
     msgs = [];
     symbolRegex = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g;
-    hasSymbol = password.match(symbolRegex) === null;
-    hasNumber = password.match(/[0-9]/g) === null;
-    hasUpper = password.match(/[A-Z]/g) === null;
-    hasLower = password.match(/[a-z]/g) === null;
-    if (password) {
-      if (password.length < 8) {
-        msgs.push(errorLength(8));
-      } else if (password.length < 12) {
-        if (hasSymbol) {
-          msgs.push(errorSymbol(12));
-        }
-        if (hasNumber) {
-          msgs.push(errorNumber(16));
-        }
-        if (hasUpper) {
-          msgs.push(errorUpper(20));
-        }
-        if (hasLower) {
-          msgs.push(errorLower(20));
-        }
-      } else if (password.length < 16) {
-        if (hasNumber) {
-          msgs.push(errorNumber(16));
-        }
-        if (hasUpper) {
-          msgs.push(errorUpper(20));
-        }
-        if (hasLower) {
-          msgs.push(errorLower(20));
-        }
-      } else if (password.length < 20) {
-        if (hasUpper) {
-          msgs.push(errorUpper(20));
-        }
-        if (hasLower) {
-          msgs.push(errorLower(20));
-        }
+    hasNoSymbol = !symbolRegex.test(password);
+    hasNoNumber = !/[0-9]/g.test(password);
+    hasNoUpper = !/[A-Z]/g.test(password);
+    hasNoLower = !/[a-z]/g.test(password);
+    if (password.length < 8) {
+      msgs.push(errorLength(8));
+    } else if (password.length < 12) {
+      if (hasNoSymbol) {
+        msgs.push(errorSymbol(12));
       }
-    } else {
-      msgs.push('Empty password');
+      if (hasNoNumber) {
+        msgs.push(errorNumber(16));
+      }
+      if (hasNoUpper) {
+        msgs.push(errorUpper(20));
+      }
+      if (hasNoLower) {
+        msgs.push(errorLower(20));
+      }
+    } else if (password.length < 16) {
+      if (hasNoNumber) {
+        msgs.push(errorNumber(16));
+      }
+      if (hasNoUpper) {
+        msgs.push(errorUpper(20));
+      }
+      if (hasNoLower) {
+        msgs.push(errorLower(20));
+      }
+    } else if (password.length < 20) {
+      if (hasNoUpper) {
+        msgs.push(errorUpper(20));
+      }
+      if (hasNoLower) {
+        msgs.push(errorLower(20));
+      }
     }
     return msgs;
   };
