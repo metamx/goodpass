@@ -1,6 +1,4 @@
-_ = require('underscore')
-
-isVowel = (char) -> _.contains(['a', 'e', 'i', 'o', 'u'], char)
+isVowel = (char) -> char in ['a', 'e', 'i', 'o', 'u']
 getArticle = (word) -> if isVowel(word.charAt(0)) then "an" else "a"
 needs = (type, n) -> "Must contain #{getArticle(type)} #{type}, if fewer than #{n} characters."
 errorLength = (n) -> "Too short (must be #{n} characters or more)."
