@@ -1,9 +1,13 @@
-prefix = 'Too short to not contain'
-errorLength = (n) -> "Too short (must be #{n} characters or more)"
-errorUpper  = (n) -> "#{prefix} uppercase letter (must be #{n} characters or more)"
-errorLower  = (n) -> "#{prefix} lowercase letter (must be #{n} characters or more)"
-errorNumber = (n) -> "#{prefix} number (must be #{n} characters or more)"
-errorSymbol = (n) -> "#{prefix} symbol (must be #{n} characters or more)"
+_ = require('underscore')
+
+isVowel = (char) -> _.contains(['a', 'e', 'i', 'o', 'u'], char)
+getArticle = (word) -> if isVowel(word.charAt(0)) then "an" else "a"
+needs = (type, n) -> "Must contain #{getArticle(type)} #{type}, if fewer than #{n} characters."
+errorLength = (n) -> "Too short (must be #{n} characters or more)."
+errorUpper  = (n) -> needs("uppercase letter", n, "an")
+errorLower  = (n) -> needs("lowercase letter", n)
+errorNumber = (n) -> needs("number", n)
+errorSymbol = (n) -> needs("symbol", n)
 
 goodpass = (password) ->
   if not password
