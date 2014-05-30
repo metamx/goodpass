@@ -7,9 +7,14 @@ errorLower  = (n) -> needs("lowercase letter", n)
 errorNumber = (n) -> needs("number", n)
 errorSymbol = (n) -> needs("symbol", n)
 
-goodpass = (password) ->
+goodpass = (password, {maxLength} = {}) ->
   if not password
     return ['Empty password']
+
+  if maxLength? and password.length > maxLength
+    if maxLength < 8
+      return ['Specified maximum password length shorter than minimum length (8)']
+    return ['Password exceeds maximum length.']
 
   msgs = []
   symbolRegex = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g

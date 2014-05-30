@@ -2,9 +2,11 @@
 
 var goodpass = require("../goodpass.js");
 
-if (process.argv.length < 3) {
-  console.error("Usage: goodpass <password>")
+if (process.argv.length < 3 || process.argv.length > 4) {
+  console.error("Usage: goodpass [maxLength] <password>")
   process.exit(1)
+} else if (process.argv.length === 3) {
+  console.log(goodpass(process.argv[2]))
+} else {
+  console.log(goodpass(process.argv[3], {maxLength: process.argv[2]}));
 }
-
-console.log(goodpass(process.argv[2]));

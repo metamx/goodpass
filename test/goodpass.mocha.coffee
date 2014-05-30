@@ -48,3 +48,9 @@ describe 'goodpass', ->
       expect(goodpass('abcdefghijklmnoP')).to.eql([])
     it 'should be valid if 20+ chars', ->
       expect(goodpass('abcdefghijklmnopqrst')).to.eql([])
+
+    it 'should be invalid if over max length', ->
+      expect(goodpass('abcdefghijklmnopqrst', {maxLength: 15})).to.eql(['Password exceeds maximum length.'])
+
+    it 'should be invalid if over max length', ->
+      expect(goodpass('abcdefghijklmnopqrst', {maxLength: 7})).to.eql(['Specified maximum password length shorter than minimum length (8)'])
