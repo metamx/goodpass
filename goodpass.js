@@ -45,10 +45,13 @@
       return ['Empty password'];
     }
     if ((maxLength != null) && password.length > maxLength) {
+      if (maxLength < 8) {
+        return ['Specified maximum password length shorter than minimum length (8)'];
+      }
       return ['Password exceeds maximum length.'];
     }
     msgs = [];
-    symbolRegex = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g;
+    symbolRegex = /[`~!@#$%^&*()_-+={}\[\]|:;"'<,>.?\/]/g;
     hasNoSymbol = !symbolRegex.test(password);
     hasNoNumber = !/[0-9]/g.test(password);
     hasNoUpper = !/[A-Z]/g.test(password);

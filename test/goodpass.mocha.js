@@ -88,8 +88,18 @@
       it('should be valid if 16+ chars with mixed case letters', function() {
         return expect(goodpass('abcdefghijklmnoP')).to.eql([]);
       });
-      return it('should be valid if 20+ chars', function() {
+      it('should be valid if 20+ chars', function() {
         return expect(goodpass('abcdefghijklmnopqrst')).to.eql([]);
+      });
+      it('should be invalid if over max length', function() {
+        return expect(goodpass('abcdefghijklmnopqrst', {
+          maxLength: 15
+        })).to.eql(['Password exceeds maximum length.']);
+      });
+      return it('should be invalid if over max length', function() {
+        return expect(goodpass('abcdefghijklmnopqrst', {
+          maxLength: 7
+        })).to.eql(['Specified maximum password length shorter than minimum length (8)']);
       });
     });
   });

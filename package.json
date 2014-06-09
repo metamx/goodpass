@@ -6,7 +6,7 @@
   },
   "name": "goodpass",
   "description": "Make sure your password is good!",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/metamx/goodpass.git"
@@ -27,11 +27,11 @@
     "name": "jasonjmcghee",
     "email": "jason.mcghee@metamarkets.com"
   },
-  "_id": "goodpass@0.1.1",
+  "_id": "goodpass@0.1.2",
   "optionalDependencies": {},
   "_engineSupported": true,
   "_npmVersion": "1.1.2",
   "_nodeVersion": "v0.7.6-pre",
   "_defaultsLoaded": true,
-  "_from": "goodpass@0.1.0"
+  "_from": "goodpass@0.1.1"
 }

@@ -17,7 +17,7 @@ goodpass = (password, {maxLength} = {}) ->
     return ['Password exceeds maximum length.']
 
   msgs = []
-  symbolRegex = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/g
+  symbolRegex = /[`~!@#$%^&*()_-+={}\[\]|:;"'<,>.?\/]/g
   hasNoSymbol = not symbolRegex.test(password)
   hasNoNumber = not /[0-9]/g.test(password)
   hasNoUpper = not /[A-Z]/g.test(password)
