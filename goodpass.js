@@ -51,7 +51,7 @@
       return ['Password exceeds maximum length.'];
     }
     msgs = [];
-    symbolRegex = /[`~!@#$%^&*()_-+={}\[\]|:;"'<,>.?\/]/g;
+    symbolRegex = /[-`~!@#$%^&*()_+={}\[\]|:;"'<,>.?\/]/g;
     hasNoSymbol = !symbolRegex.test(password);
     hasNoNumber = !/[0-9]/g.test(password);
     hasNoUpper = !/[A-Z]/g.test(password);
