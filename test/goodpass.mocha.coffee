@@ -54,3 +54,8 @@ describe 'goodpass', ->
 
     it 'should be invalid if over max length', ->
       expect(goodpass('abcdefghijklmnopqrst', {maxLength: 7})).to.eql(['Specified maximum password length shorter than minimum length (8)'])
+
+  describe 'symbols', ->
+    it 'should include all symbols users should be able to use in a password', ->
+      for symbol in '-`~!@#$%^&*()_+={}\[\]|:;"\'<,>.?\/'
+        expect(goodpass("abcdefgH1#{symbol}")).to.eql([])
