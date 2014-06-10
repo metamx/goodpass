@@ -9,13 +9,11 @@ Returns an array of all errors yielded while validating the password (or empty a
 $ goodpass [max length] <password>
 ```
 
-###Use is Javascript
-
+###Use is Javascript:
 ```javascript
 	goodpass(password, {maxLength})
 ```
-
-####Example
+####Example:
 ```javascript
 	console.log(goodpass('hello123*', {maxLength: 250}));
 	// --> [ 'Must contain an uppercase letter, if fewer than 20 characters.' ]
