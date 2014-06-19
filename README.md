@@ -11,10 +11,10 @@ $ goodpass [max length] <password>
 
 ###Use is Javascript:
 ```javascript
-	goodpass(password, {maxLength})
+goodpass(password, {maxLength})
 ```
 ####Example:
 ```javascript
-	console.log(goodpass('hello123*', {maxLength: 250}));
-	// --> [ 'Must contain an uppercase letter, if fewer than 20 characters.' ]
+console.log(goodpass('hello123*', {maxLength: 250}));
+// --> [ 'Must contain an uppercase letter, if fewer than 20 characters.' ]
 ```
