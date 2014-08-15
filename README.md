@@ -18,7 +18,7 @@ The `goodpass` utility enforces Stanford's password validation policy:
   - lowercase letters
 - 20+ character passwords have no requirements
 
-Returns an array of all unmet conditions found while validating the password (or empty array if valid password).
+Returns an array of all unmet conditions found while validating the password (or empty array if valid).
 
 
 
